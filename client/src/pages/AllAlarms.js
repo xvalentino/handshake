@@ -27,9 +27,9 @@ export default () => {
           return (
             <ul>
               {result.data.allAlarms.map(alarm => (
-                <li key={alarm.id}>
+                <Text element="li" key={alarm.id}>
                   {alarm.id} -- {alarm.text}
-                </li>
+                </Text>
               ))}
             </ul>
           );
