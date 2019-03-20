@@ -5,9 +5,10 @@ import Text from "mineral-ui/Text";
 
 const ALL_ALARMS = gql`
   {
-    allAlarms {
+    allAlarms(orderBy: createdAt_DESC) {
       id
       text
+      createdAt
     }
   }
 `;
