@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
-import AllAlarms from "./pages/AllAlarms";
+import { AllAlarms } from "./pages/AllAlarms";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import { ThemeProvider } from "mineral-ui/themes";

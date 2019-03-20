@@ -4,7 +4,7 @@ import gql from "graphql-tag";
 import Text from "mineral-ui/Text";
 import NewAlarm from "../components/NewAlarm";
 
-const ALL_ALARMS = gql`
+export const ALL_ALARMS = gql`
   {
     allAlarms(orderBy: createdAt_DESC) {
       id
@@ -14,7 +14,7 @@ const ALL_ALARMS = gql`
   }
 `;
 
-export default () => {
+export const AllAlarms = () => {
   return (
     <>
       <Text>Alarms</Text>
