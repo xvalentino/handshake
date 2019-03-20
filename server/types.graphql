@@ -1,4 +1,3 @@
-
 type Alarm @model {
   id: ID! @isUnique
   text: String
