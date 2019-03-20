@@ -13,7 +13,9 @@ const smartSort = alarms => {
     const createdAt = moment()
       .from(alarm.createdAt)
       .valueOf();
-    const now = moment().fromNow();
+    const now = moment()
+      .fromNow()
+      .valueOf();
     console.log(now, createdAt);
     const timeSince = now - createdAt;
     return timeSince / -alarm.vote;
