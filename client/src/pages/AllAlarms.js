@@ -3,6 +3,7 @@ import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import Text from "mineral-ui/Text";
 import NewAlarm from "../components/NewAlarm";
+import Alarm from "../components/Alarm";
 
 export const ALL_ALARMS = gql`
   {
@@ -30,9 +31,7 @@ export const AllAlarms = () => {
           return (
             <ul>
               {result.data.allAlarms.map(alarm => (
-                <Text element="li" key={alarm.id}>
-                  {alarm.id} -- {alarm.text}
-                </Text>
+                <Alarm key={alarm.id} alarm={alarm} />
               ))}
             </ul>
           );
