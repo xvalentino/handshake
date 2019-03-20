@@ -12,10 +12,12 @@
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
     "mineral-ui": "^0.57.0",
+    "moment": "^2.24.0",
     "react": "^16.8.4",
     "react-apollo": "^2.5.2",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",

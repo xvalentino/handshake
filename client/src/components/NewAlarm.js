@@ -8,10 +8,11 @@ import { ALL_ALARMS } from "../pages/AllAlarms";
 
 const CREATE_ALARM = gql`
   mutation createAlarm($text: String!) {
-    createAlarm(text: $text) {
+    createAlarm(text: $text, vote: 0) {
       id
       text
       createdAt
+      vote
     }
   }
 `;

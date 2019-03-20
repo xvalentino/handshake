@@ -2,4 +2,5 @@ type Alarm @model {
   id: ID! @isUnique
   text: String
   createdAt: DateTime!
+  vote: Int! @migrationValue(value: 0)
 }

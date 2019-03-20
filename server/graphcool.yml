@@ -6,6 +6,12 @@ functions:
       code: src/hello.js
     type: resolver
     schema: src/hello.graphql
+  afterAlarmCreate:
+    type: operationAfter
+    operation: Alarm.create
+    handler:
+      code:
+        src: ./src/postToHandshake.js
 
 permissions:
   - operation: "*"
