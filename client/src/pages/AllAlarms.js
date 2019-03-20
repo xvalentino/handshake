@@ -2,6 +2,7 @@ import React from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import Text from "mineral-ui/Text";
+import NewAlarm from "../components/NewAlarm";
 
 const ALL_ALARMS = gql`
   {
@@ -17,6 +18,7 @@ export default () => {
   return (
     <>
       <Text>Alarms</Text>
+      <NewAlarm />
       <Query query={ALL_ALARMS}>
         {result => {
           if (result.loading || !result.data) {
